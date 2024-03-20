@@ -1,0 +1,120 @@
+/* Resetting default margin and padding */
+body, h1, ul, li, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering content */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif; /* Choose your desired font */
+}
+
+/* Header style */
+header {
+    background-color: #3770a5; /* Dark gray background for the header */
+    padding: 10px 0; /* Add padding to the header */
+    width: 100%; /* Make header full width */
+    margin-bottom: 75px;
+
+}
+
+/* Main heading style */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* White text color for the heading */
+    margin-top: 20px;
+}
+
+/* List style */
+.artist-list {
+    list-style: none;
+    width: 80%; /* Set width to 80% of the container */
+    max-width: 8000px; /* Limit maximum width */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Artist box style */
+.artist-list li {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 40px); /* Adjust width to stretch to the edges with spacing */
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 20px;
+    background-color: #3498db; /* Blue background for artist boxes */
+    color: #fff; /* White text */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Artist image style */
+.artist-list li img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+/* Artist info style */
+.artist-info {
+    flex: 1;
+}
+
+/* Link style */
+.artist-info a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Link hover effect */
+.artist-info a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    color: #003cff; /* Change text color on hover */
+}
+
+/* Home button style */
+.home img {
+    height: 60px; /* Set the height of the home button image */
+    width: 60px; /* Auto width to maintain aspect ratio */
+}
+/* Add this CSS to your existing style.css or your CSS file */
+
+.song {
+    background-color: #3498db; /* Blue background */
+    color: #fff; /* White text */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/* Add this CSS to your existing style.css or your CSS file */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.center-row {
+    justify-content: center;
+}
+
+.song {
+    background-color: #3498db; /* Blue background */
+    color: #fff; /* White text */
+    border-radius: 5px;
+    padding: 20px;
+    width: 550px; /* 50% width for each song with spacing */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.song iframe {
+    width: 100%; /* Make the videos fill the entire width of their container */
+}
+
