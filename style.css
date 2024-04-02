@@ -1,18 +1,18 @@
-/* Resetting default margin and padding */
+
 body, h1, ul, li, img {
     margin: 0;
     padding: 0;
 }
 
-/* Centering content */
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0; /* Light gray background */
-    font-family: Arial, sans-serif; /* Choose your desired font */
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif; 
 }
 
 /* Header style */
@@ -28,15 +28,15 @@ header {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: white; /* White text color for the heading */
+    color: white; 
     margin-top: 20px;
 }
 
 /* List style */
 .artist-list {
     list-style: none;
-    width: 80%; /* Set width to 80% of the container */
-    max-width: 8000px; /* Limit maximum width */
+    width: 80%; 
+    max-width: 8000px; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -44,11 +44,11 @@ h1 {
 .artist-list li {
     display: flex;
     align-items: center;
-    width: calc(100% - 40px); /* Adjust width to stretch to the edges with spacing */
-    margin: 0 auto; /* Center horizontally */
+    width: calc(100% - 40px);
+    margin: 0 auto; 
     margin-bottom: 20px;
-    background-color: #3498db; /* Blue background for artist boxes */
-    color: #fff; /* White text */
+    background-color: #3498db; 
+    color: #fff; 
     border-radius: 5px;
     overflow: hidden;
 }
@@ -60,40 +60,26 @@ h1 {
     margin-right: 20px;
 }
 
-/* Artist info style */
-.artist-info {
-    flex: 1;
-}
-
 /* Link style */
 .artist-info a {
-    color: #fff; /* White text */
+    color: #fff; 
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Link hover effect */
 .artist-info a:hover {
-    background-color: #2980b9; /* Darker blue on hover */
-    color: #003cff; /* Change text color on hover */
+    background-color: #2980b9;
+    color: #003cff; 
 }
 
 /* Home button style */
 .home img {
-    height: 60px; /* Set the height of the home button image */
-    width: 60px; /* Auto width to maintain aspect ratio */
+    height: 60px; 
+    width: 60px; 
 }
-/* Add this CSS to your existing style.css or your CSS file */
 
-.song {
-    background-color: #3498db; /* Blue background */
-    color: #fff; /* White text */
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-/* Add this CSS to your existing style.css or your CSS file */
-
+/* how the boxes are listed*/
 .row {
     display: flex;
     justify-content: space-between;
@@ -103,18 +89,28 @@ h1 {
 .center-row {
     justify-content: center;
 }
-
+/*songs in each box*/
 .song {
-    background-color: #3498db; /* Blue background */
-    color: #fff; /* White text */
+    background-color: #3498db; 
+    color: #fff; 
     border-radius: 5px;
     padding: 20px;
-    width: 550px; /* 50% width for each song with spacing */
+    width: 550px; 
     margin-right: 20px;
     margin-bottom: 20px;
 }
-
+/* videos*/
 .song iframe {
-    width: 100%; /* Make the videos fill the entire width of their container */
+    width: 100%; 
+}
+/* Link style */
+.song h2 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add transition for color change */
 }
 
+/* Link hover effect */
+.song h2 a:hover {
+    color: #3770a5; /* Change color on hover */
+}
